@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCC Survey Project</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+  
+            <form id="survey-form">
+              <h1 id="title">Dear Sir / Madam!</h1>
+            <p id="description">With the help of our questionnaire we would like to get more information about the situation of fast food chains in Hungary.</p>
+              <div class="form-group">
+              <!-- Name input -->
+                <label id="name-label">Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your name" required>
+              <!-- E-mail input -->
+              </div>
+              <div class="form-group">
+                <label id="email-label">E-mail:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Your e-mail address" required>
+              </div>
+              <!-- Age input -->
+              <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Age" min="14" max="100" required>
+              </div>
+              <!-- Radio button -->
+              <div class="form-group">
+                <p>How often do you eat in a fast food restaurant?</p>
+                <label>
+                  <input name="eating" value="daily" type="radio" class="input-radio" checked><span class="whitespace"></span>Daily</label>
+                <label>
+                  <input name="eating" value="weekly" type="radio" class="input-radio"><span class="whitespace">Weekly</label>
+                <label>
+                  <input name="eating" value="monthly" type="radio" class="input-radio"><span class="whitespace">Monthly</label>
+                <label>
+                  <input name="eating" value="never" type="radio" class="input-radio"><span class="whitespace">Never</label>
+              </div>
+              <!-- Textarea -->
+              <div class="form-group">
+                <p>If the answer to the previous question is never, please explain briefly why you aren't going to a fast food restaurant:</p>
+                <textarea id="explain" class="input-textarea" name="explain" placeholder="Enter your answer here"></textarea>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-group">
+                <p>Who do you go to fast food restaurant with? (Multiple answers possible)<p>
+                <label>
+                  <input name="with" value="friends" type="checkbox" class="input-checkbox"><span class="whitespace">Friends</label>
+                <label>
+                  <input name="with" value="alone" type="checkbox" class="input-checkbox"><span class="whitespace">Alone</label>
+                <label>
+                  <input name="with" value="family" type="checkbox" class="input-checkbox"><span class="whitespace">Family</label>
+              </div>
+              <!-- Dropdown -->
+              <div class="form-group">
+                <p>How much do you spend on fast food per month?</p>
+                <select id="dropdown" name="spendings" class="form-control" required>
+                  <option disabled selected value>Select</option>
+                  <option value="underone">Under 1 &#x20AC;</option>
+                  <option value="onetoten">1 to 10 &#x20AC;</option>
+                  <option value="tenplus">10 &#x20AC; plus</option>
+                </select>
+              </div>
+              <!-- Submit button -->
+              <div class="form-group">
+                <button id="submit" type="submit-button" class="submit-button">Submit</button>
+              </div>
+            </form>
+         </main>
+    </body>
+</html>
